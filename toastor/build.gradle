@@ -43,16 +43,14 @@ dependencies {
 }
 
 // Modülün yayınlanabilirliğini yapılandıralım
-afterEvaluate{
+afterEvaluate {
     publishing {
         publications {
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.github.omerakkoyun' // Grup kimliği
-                artifactId = 'toastor' // Sanal nesne kimliği
-                version = '1.0' // Sürüm numarası
-
-
+            register("release", MavenPublication) {
+                from(components["release"])
+                groupId = "com.github.omerakkoyun" // Grup kimliği
+                artifactId = "toastor" // Sanal nesne kimliği
+                version = "1.0" // Sürüm numarası
             }
         }
     }
