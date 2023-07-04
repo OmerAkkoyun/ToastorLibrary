@@ -29,6 +29,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
 }
 
 dependencies {
@@ -46,9 +47,11 @@ afterEvaluate{
     publishing {
         publications {
             release(MavenPublication) {
+                from components.release
                 groupId = 'com.github.omerakkoyun' // Grup kimliği
                 artifactId = 'toastor' // Sanal nesne kimliği
                 version = '1.0' // Sürüm numarası
+
 
             }
         }
