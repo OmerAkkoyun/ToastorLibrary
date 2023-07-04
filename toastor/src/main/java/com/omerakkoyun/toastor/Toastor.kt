@@ -6,7 +6,7 @@ import android.widget.Toast
 /**
  * Created by Omer AKKOYUN on 4.07.2023.
  */
-class Toasttt {
+class Toastor {
     companion object{
 
 
