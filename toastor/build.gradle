@@ -46,7 +46,7 @@ afterEvaluate{
     publishing {
         publications {
             release(MavenPublication) {
-                groupId = 'com.github.OmerAkkoyun' // Grup kimliği
+                groupId = 'com.github.omerakkoyun' // Grup kimliği
                 artifactId = 'toastor' // Sanal nesne kimliği
                 version = '1.0' // Sürüm numarası
 
